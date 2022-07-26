@@ -4,7 +4,7 @@ import hmac
 from gmssl import sm2,func
 import sys
 
-#---RFC4979中生成随机数k------
+#---RFC6979中生成随机数k------
 if sys.version[0] == '2':
     safe_ord = ord
 else:
@@ -27,7 +27,7 @@ i_sha = hashlib.sha256(i.encode('utf-8')).digest()
 i_priv=i.encode(encoding="utf8",errors="strict")
 k=deterministic_generate_k(i_sha,i_priv)
 print(k)
-#---RFC4979中生成随机数k------
+#---RFC6979中生成随机数k------
 
 
 #16进制的公钥和私钥
