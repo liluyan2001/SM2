@@ -44,8 +44,8 @@ print(dec_data)
 if(dec_data == data):
   print("加解密一致")
 data = b"111" # bytes类型
-random_hex_str = func.random_hex(32)
-priv_And_k=random_hex_str+str(k)
+random_hex_str = func.random_hex(sm2_crypt.para_len)
+priv_And_k=random_hex_str
 sign = sm2_crypt.sign(data,priv_And_k) #  16进制
 if(sm2_crypt.verify(sign, data)): #  16进制
   print("验证签名成功")
