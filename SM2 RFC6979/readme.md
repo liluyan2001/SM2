@@ -1,5 +1,21 @@
-基于gmssl，通过阅读RFC679文档，实现了SM2算法
-#---RFC6979中生成随机数k------
+# <center>SM2 RFC6979实验报告</center>
+
+>**课程名称     <u>创新创业实践课程</u>  **       
+>
+>**学生姓名   <u>李路岩</u>      学号  <u>202022180198</u>**     
+>
+>**学院   <u>网络空间安全</u>学院    专业  <u>信息安全</u>**   
+
+[TOC]
+
+## <center>实验思路</center>
+
+>利用HMAC与HASH来生成一个又随机，又冷门的随机数k
+
+## <center>关键代码</center>
+
+```python
+#---RFC4979中生成随机数k------
 if sys.version[0] == '2':
     safe_ord = ord
 else:
@@ -22,4 +38,15 @@ i_sha = hashlib.sha256(i.encode('utf-8')).digest()
 i_priv=i.encode(encoding="utf8",errors="strict")
 k=deterministic_generate_k(i_sha,i_priv)
 print(k)
-#---RFC6979中生成随机数k------
+#---RFC4979中生成随机数k------
+```
+
+
+
+## <center>实验结果</center>
+
+><img src="https://img.gejiba.com/images/775fb0f6a2cbbea1623418a87c477d99.jpg" alt="SM2 6979" border="0">
+
+可见加解密一致
+
+验证签名成功
