@@ -9,7 +9,7 @@
 [TOC]
 
 ## <center>实验思路</center>
-
+<a href="https://img.gejiba.com/image/Ey7IlC"><img src="https://img.gejiba.com/images/7a91cd05c9343b350852241254025592.jpg" alt="7a91cd05c9343b350852241254025592.jpg" border="0"></a>
 >PGP-Pretty Good Privacy，是一个基于RSA公钥和对称加密相结合的邮件加密软件。该系统能为电子邮件和文件存储应用过程提供认证业务和保密业务。
 >
 >PGP是个混合加密算法，它由一个对称加密算法、一个非对称加密算法、与单向散列算法以及一个随机数产生器组成的，每种算法都是PGP不可分割的组成部分。
@@ -17,6 +17,7 @@
 >PGP让使用者可以安全地从未见过的人们通信，而事先并不需要任何保密的渠道用来传递密钥。
 >
 >**在这里，我使用了SM2和AES来进行实现**
+
 
 ## <center>关键代码</center>
 
