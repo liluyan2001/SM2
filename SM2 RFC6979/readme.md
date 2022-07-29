@@ -45,8 +45,7 @@ print(k)
 
 ## <center>实验结果</center>
 
-><img src="https://img.gejiba.com/images/775fb0f6a2cbbea1623418a87c477d99.jpg" alt="SM2 6979" border="0">
-
+><img src="https://img.gejiba.com/images/2e8cae4627b37367a3b1560c3276809f.jpg" alt="SM2 6979" border="0">
 可见加解密一致
 
 验证签名成功
